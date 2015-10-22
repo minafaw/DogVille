@@ -17,11 +17,10 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/imageView"
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/puppy_imageView"
                     android:layout_width="110dp"
                     android:layout_height="110dp"
-
                     android:scaleType="centerCrop"
                     android:src="@drawable/bubby_list_one"
 
@@ -88,7 +87,7 @@
                 android:background="@color/puppy_blue"
                 android:layout_marginTop="15dp"
                 android:layout_gravity="right"
-                android:text="New Text" />
+                android:text="gender" />
 
 
         </RelativeLayout>

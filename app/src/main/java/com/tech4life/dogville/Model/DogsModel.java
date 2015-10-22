@@ -11,19 +11,47 @@ import java.io.Serializable;
 public class DogsModel implements Serializable {
 
 
-    private String dogid ;
-    private String DogName ;
+    private String dogid;
+    private String DogName;
     private Drawable image;
     private String Price;
     private Bitmap bitmapImage;
-    private String Description ;
+    private String Description;
     private String Imageurl;
-    private String genderId ;
-    private String NoOfViews ;
+    private String genderId;
+    private String NoOfViews;
+    private String dogLoc;
+    private String dog_age;
+    private String dog_color;
+
+    public String getDogLoc() {
+        return dogLoc;
+    }
+
+    public void setDogLoc(String dogLoc) {
+        this.dogLoc = dogLoc;
+    }
+
+    public String getDog_age() {
+        return dog_age;
+    }
+
+    public void setDog_age(String dog_age) {
+        this.dog_age = dog_age;
+    }
+
+    public String getDog_color() {
+        return dog_color;
+    }
+
+    public void setDog_color(String dog_color) {
+        this.dog_color = dog_color;
+    }
 
     public String getDogid() {
         return dogid;
     }
+
     public Bitmap getBitmapImage() {
         return bitmapImage;
     }
