@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/index_background">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:background="@null"/>
+            <TextView
+                android:id="@+id/mtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Home"
+                android:textColor="@color/WHITE"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/row1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/advertiseImg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/opin_bg"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row2"
+            android:orientation="horizontal"
+            android:gravity="left"
+            >
+
+                <com.tech4life.dogville.Controller.HorizontalListView
+                    android:id="@+id/listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp">
+                    </com.tech4life.dogville.Controller.HorizontalListView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/row4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row3"
+            android:orientation="horizontal"
+            android:gravity="left"
+            >
+
+            <com.tech4life.dogville.Controller.HorizontalListView
+                android:id="@+id/listview2"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp">
+            </com.tech4life.dogville.Controller.HorizontalListView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/row5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row4"
+            android:orientation="horizontal"
+            android:gravity="left"
+            >
+
+            <com.tech4life.dogville.Controller.HorizontalListView
+                android:id="@+id/listview3"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp">
+            </com.tech4life.dogville.Controller.HorizontalListView>
+
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

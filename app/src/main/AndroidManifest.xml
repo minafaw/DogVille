@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tech4life.dogville" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <activity
+            android:name=".View.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".View.ForgetPassword" />
+        <activity android:name=".View.LoginActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".View.SignUpActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".View.HomeActivity" />
+        <activity
+            android:name=".Controller.ErrorHandler"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <service android:name=".View.HomeService" />
+        <service android:name=".View.PuppyService" />
+        <service android:name=".View.RegistrationService" />
+
+        <activity android:name=".View.ProductDetails" >
+        </activity>
+
+        <service android:name=".View.LoginService" >
+        </service>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+           android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_id">
+        </activity>
+    </application>
+
+</manifest>
